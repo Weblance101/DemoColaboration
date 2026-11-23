@@ -93,7 +93,118 @@ p {
 /* ==============================
  HERO SECTION
 ================================= */
+.hero {
+    width: 100%;
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    padding: 80px 10%;
+    margin-bottom: 55px;
 
+    background:
+    linear-gradient(
+        90deg,
+        rgba(0,0,0,0.8),
+        rgba(0,0,0,0.2)
+    ),
+    url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1920&q=85");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 650px;
+    color: white;
+}
+
+.tagline {
+    display: inline-block;
+    color: #ffcc66;
+    letter-spacing: 3px;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.hero-content h1 {
+    font-size: 60px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 span {
+    color: #ffcc66;
+}
+
+.hero-content p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #eeeeee;
+    margin-bottom: 35px;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.buttons a {
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: #ffb830;
+    color: #111;
+}
+
+.btn-primary:hover {
+    background: white;
+    transform: translateY(-4px);
+}
+
+.btn-secondary {
+    border: 2px solid white;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: white;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        min-height: 550px;
+        padding: 60px 7%;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .buttons a {
+        padding: 12px 20px;
+    }
+}
+
+/* ==============================
+ ABOUT SECTION
+================================= */
 .about-hero {
   min-height: 570px;
   display: flex;
